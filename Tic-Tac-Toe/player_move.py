@@ -20,6 +20,6 @@ def user_board_move():
             print("Invalid input")
 
 
-user_board_move()
-board.print_board(board.board_table)
+# user_board_move()
+# board.print_board(board.board_table)
 
