@@ -1,6 +1,4 @@
 import board
-import Start
-import introduction
 
 def player_board_move():
     while True:

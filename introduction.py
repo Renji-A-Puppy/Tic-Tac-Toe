@@ -18,30 +18,31 @@ def instructions(name):
      print(["4", "5", "6"])          #(  3 4 5   )
      print(["7", "8", "9"])          #(  6 7 8   )
      print ("_________________________________________________________________________________________________________")
-     
-     Start.player_turn()
-     '''
-     Line 1 importing the star of the game
-     Line 3 a def function for introduction
-     Line 4 prints some personal/ fun text to engage the user more in the game.
-     Lines 5-15 contain instructions that explain the rules, the spaces, and the lines, to make it more readable for the user.
-     Lines 16-20 mainly show what the game board looks like and give them an understanding of how the board is set up.
-     Line 22 sends you to the start of the game and into the player's turn.
-     '''
+
+     Start.the_game()
+
+# '''
+#      Line 1 importing the star of the game
+#      Line 3 a def function for introduction
+#      Line 4 prints some personal/ fun text to engage the user more in the game.
+#      Lines 5-15 contain instructions that explain the rules, the spaces, and the lines, to make it more readable for the user.
+#      Lines 16-20 mainly show what the game board looks like and give them an understanding of how the board is set up.
+#      Line 22 sends you to the start of the game and into the player's turn.
+#      '''
 
 
-# while True:
-#   user_input = input("Yes or no?")
-#   if user_input.upper() == "NO" or user_input[0].lower() == "n":
-#      print("whaaaat where you just pulling my tail?'whimpers'", name)
-#      break
+# # while True:
+# #   user_input = input("Yes or no?")
+# #   if user_input.upper() == "NO" or user_input[0].lower() == "n":
+# #      print("whaaaat where you just pulling my tail?'whimpers'", name)
+# #      break
   
-#   elif user_input.lower() == "yes" or user_input[0].lower() == "y" or user_input.lower() == "sure":
-#      print("Then let the games begin best of luck to you ", name)
-#      instructions()
-#      break
+# #   elif user_input.lower() == "yes" or user_input[0].lower() == "y" or user_input.lower() == "sure":
+# #      print("Then let the games begin best of luck to you ", name)
+# #      instructions()
+# #      break
   
-#   else:
-#      print("invalid answer, please type yes/no. Try again.")
+# #   else:
+# #      print("invalid answer, please type yes/no. Try again.")
     
-#      continue
+# #      continue

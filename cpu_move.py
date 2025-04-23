@@ -1,17 +1,22 @@
 import board
-import player_move
 import random
 
-def cpu_move():
+def cpu_board_move():
     while True:
-        cpu_board = sum(board.board_table, [])
-        cpu_placment = int(random.choices(cpu_board, [10, 1, 8, 5, 10, 6, 10 , 5 ,10])[0])
+        cpu_board = [num for num in sum(board.board_table, []) if num.isdigit()]
+        weights = []
+        for spot in cpu_board:
+            if spot == "5":
+                weights.append(10)
+            elif spot in ["1", "9", "7", "3"]:
+                weights.append(8)
+            else:
+                weights.append(3)
+        cpu_placment = int(random.choices(cpu_board, weights)[0])
 
+        row = (cpu_placment - 1) // 3
+        col = (cpu_placment - 1) % 3 
 
-
-        row = cpu_placment // 3
-        col = cpu_placment % 3
-        
         if board.board_table[row][col] in [board.cpu, board.player]:
             continue
         else:
@@ -19,7 +24,6 @@ def cpu_move():
             break
 
 
-cpu_move()
 '''
 It's not finished yet, I will explain more when it's working.
 Line 8 is supposed to use random choices to give weights for the CPU move.
@@ -31,4 +35,3 @@ Lines 15-16 are supposed to prevent you from putting a symbol in an already clai
 17-19  Takes the value of the number and places that value with an X.
 
 '''
-    
