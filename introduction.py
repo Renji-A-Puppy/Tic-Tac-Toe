@@ -18,8 +18,25 @@ def instructions(name):
      print(["4", "5", "6"])          #(  3 4 5   )
      print(["7", "8", "9"])          #(  6 7 8   )
      print ("_________________________________________________________________________________________________________")
+     
+     user_input = input(f"Are you ready to play? {name} 'chasing tail' type Yes or No: ")
+     print("                                                                                                           ")
+     print("                                                                                                           ")
+      
+     if user_input.upper() == "NO" or user_input[0].lower() == "n":
+          print(f"What you're not, Ok come back your ready to play ok {name}, I hope we can play sometime Good bye...' slowly wabbles away '")
+     elif user_input.lower() == "yes" or user_input[0].lower() == "y" or user_input.lower() == "sure":
+          print ("_____________________________________________________________________________________________________________________________")
+          print(f"Hurray, hurray let the games begin {name} 'jumps with joy' ")
+          print ("_____________________________________________________________________________________________________________________________")
+          print(f"I like 'X', so you can be 'O' ok... but, but, you can go first.")
+          Start.the_game(name)
+     else:
+          print ("_____________________________________________________________________________________________________________________________")
+          print("invalid answer, please type yes/no. Try again.")
+          print ("_____________________________________________________________________________________________________________________________")
 
-     Start.the_game()
+     
 
 # '''
 #      Line 1 importing the star of the game
